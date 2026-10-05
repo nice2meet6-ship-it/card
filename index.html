@@ -27,22 +27,26 @@ body{
 /* 명함 이미지 — 좌우 여백 없이 꽉 차게 */
 .face{display:block; width:100%; height:auto}
 
-.pad{padding:26px 26px 30px}
+.pad{padding:22px 26px 28px}
+/* 앞면 이미지에서 뺀 직함·이메일 */
+.role{font-size:17px; font-weight:500; letter-spacing:.02em}
+.mail{margin-top:4px; font-size:15px}
+.mail a{color:var(--sub); text-decoration:none}
 .save{
-  display:block; background:var(--accent); color:#fff; text-align:center;
-  text-decoration:none; font-size:18px; font-weight:500; letter-spacing:.04em;
-  padding:18px 0; border-radius:13px;
+  display:block; margin-top:20px; background:var(--accent); color:#fff;
+  text-align:center; text-decoration:none; font-size:18px; font-weight:500;
+  letter-spacing:.04em; padding:18px 0; border-radius:13px;
 }
 .save:active{opacity:.85}
 .hint{text-align:center; font-size:13px; color:var(--sub); margin-top:11px}
-.quick{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:18px}
+.quick{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:16px}
 .quick a{
   border:1.5px solid var(--accent); color:var(--accent); text-decoration:none;
   text-align:center; padding:12px 0; border-radius:11px; font-size:15px; font-weight:500;
 }
 .quick a:active{background:rgba(50,62,103,.08)}
 .dl{
-  display:flex; gap:10px; justify-content:center; align-items:center;
+  display:flex; gap:10px; justify-content:center;
   padding:20px 26px 34px; border-top:1px solid var(--hair);
 }
 .dl a{
@@ -54,10 +58,13 @@ body{
 </head>
 <body>
 <main class="sheet">
-  <img class="face" src="card-front.png" width="591" height="1280"
-       alt="김요안 명함 앞면 — 민음사 출판 그룹 마케팅부 부장">
+  <img class="face" src="card-front.png" width="1182" height="1940"
+       alt="김요안 명함 앞면 — 민음사 출판 그룹 마케팅부">
 
   <div class="pad">
+    <p class="role">마케팅부 부장</p>
+    <p class="mail"><a href="mailto:nice2meet6@minumsa.com">nice2meet6@minumsa.com</a></p>
+
     <a class="save" href="kimyoan.vcf" download="김요안_민음사.vcf">📇 연락처 저장하기</a>
     <p class="hint">버튼을 누르면 연락처에 바로 추가됩니다</p>
     <div class="quick">
@@ -67,7 +74,7 @@ body{
     </div>
   </div>
 
-  <img class="face" src="card-back.png" width="591" height="1280"
+  <img class="face" src="card-back.png" width="1182" height="1940"
        alt="김요안 명함 뒷면 — 주소·전화·이메일과 연락처 저장용 QR">
 
   <div class="dl">
