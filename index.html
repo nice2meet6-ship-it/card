@@ -7,104 +7,73 @@
 <meta name="description" content="민음사 출판 그룹 마케팅부 부장 김요안의 디지털 명함">
 <meta property="og:title" content="김요안 | 민음사 출판 그룹">
 <meta property="og:description" content="마케팅부 부장 · 연락처를 바로 저장하세요">
-<meta property="og:image" content="https://nice2meet6-ship-it.github.io/card/card-og.png">
+<meta property="og:image" content="https://nice2meet6-ship-it.github.io/card/card-front.png">
 <meta property="og:type" content="profile">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📗</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --green:#3a6942; --black:#222422; --gray:#6e706e; --hair:#e2e2de;
-}
+:root{ --accent:#323e67; --paper:#faf8f3; --ink:#1c1e1c; --sub:#6e706e; --hair:#e4e1d9; }
 *{margin:0;padding:0;box-sizing:border-box}
 body{
-  background:#f0f0ec; font-family:'Noto Sans KR',sans-serif; color:var(--black);
-  display:flex; justify-content:center; min-height:100vh;
+  background:#e9e6de; font-family:'Noto Sans KR',sans-serif; color:var(--ink);
+  display:flex; justify-content:center;
 }
-.card{
-  background:#fff; width:100%; max-width:430px; min-height:100vh;
-  padding:52px 34px 36px; box-shadow:0 0 40px rgba(0,0,0,.07);
+.sheet{
+  background:var(--paper); width:100%; max-width:430px; min-height:100vh;
+  box-shadow:0 0 44px rgba(0,0,0,.09);
 }
-.head{display:flex; align-items:center; gap:14px}
-.org{font-size:21px; font-weight:500; color:var(--green)}
-.role{font-size:16px; color:var(--gray); margin-top:46px}
-h1{font-weight:700; font-size:46px; color:var(--black); margin-top:2px; letter-spacing:.06em}
-hr{border:none; border-top:1px solid var(--hair); margin:30px 0}
+/* 명함 이미지 — 좌우 여백 없이 꽉 차게 */
+.face{display:block; width:100%; height:auto}
+
+.pad{padding:26px 26px 30px}
 .save{
-  display:block; width:100%; background:var(--green); color:#fff;
-  text-align:center; text-decoration:none; font-size:18px; font-weight:500;
-  padding:17px 0; border-radius:12px; letter-spacing:.04em;
+  display:block; background:var(--accent); color:#fff; text-align:center;
+  text-decoration:none; font-size:18px; font-weight:500; letter-spacing:.04em;
+  padding:18px 0; border-radius:13px;
 }
 .save:active{opacity:.85}
-.hint{text-align:center; font-size:13px; color:var(--gray); margin-top:11px}
-.quick{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:20px}
+.hint{text-align:center; font-size:13px; color:var(--sub); margin-top:11px}
+.quick{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:18px}
 .quick a{
-  border:1.5px solid var(--green); color:var(--green); text-decoration:none;
-  text-align:center; padding:11px 0; border-radius:10px; font-size:15px; font-weight:500;
+  border:1.5px solid var(--accent); color:var(--accent); text-decoration:none;
+  text-align:center; padding:12px 0; border-radius:11px; font-size:15px; font-weight:500;
 }
-.rows{margin-top:4px}
-.row{display:flex; padding:12px 0; border-bottom:1px solid var(--hair);
-     font-size:15.5px; align-items:baseline}
-.row:last-child{border-bottom:none}
-.row .lab{width:88px; flex-shrink:0; font-size:14px; color:var(--green); font-weight:500}
-.row a{color:var(--black); text-decoration:none}
-.brands{
-  text-align:center; font-size:13.5px; color:var(--black); font-weight:500;
-  letter-spacing:.02em; word-spacing:.7em; word-break:keep-all; line-height:2; margin-top:4px;
+.quick a:active{background:rgba(50,62,103,.08)}
+.dl{
+  display:flex; gap:10px; justify-content:center; align-items:center;
+  padding:20px 26px 34px; border-top:1px solid var(--hair);
 }
-footer{text-align:center; margin-top:34px}
-footer p{font-size:10.5px; color:var(--gray); letter-spacing:.26em}
+.dl a{
+  color:var(--sub); text-decoration:none; font-size:13.5px;
+  border:1px solid var(--hair); border-radius:9px; padding:9px 15px;
+}
+.dl a:active{background:#f1eee6}
 </style>
 </head>
 <body>
-<main class="card">
-  <div class="head">
-    <svg width="34" height="86" viewBox="0 0 34 86" xmlns="http://www.w3.org/2000/svg" fill="#3a6942">
-      <rect x="14" y="2"  width="7" height="24" rx="3.5"/>
-      <rect x="14" y="30" width="7" height="24" rx="3.5"/>
-      <rect x="14" y="58" width="7" height="24" rx="3.5"/>
-      <rect x="11.5" y="26.5" width="12" height="2.4" rx="1.2"/>
-      <rect x="11.5" y="54.5" width="12" height="2.4" rx="1.2"/>
-      <path d="M14 29 Q4 33 0 44 Q9 41 14.5 32 Z"/>
-      <path d="M13.5 30 Q6 30 1.5 36 Q8.5 36 14 32.5 Z"/>
-      <path d="M21 58 Q30 62 34 72 Q25 69 20.5 61 Z"/>
-    </svg>
-    <p class="org">민음사 출판 그룹</p>
+<main class="sheet">
+  <img class="face" src="card-front.png" width="591" height="1280"
+       alt="김요안 명함 앞면 — 민음사 출판 그룹 마케팅부 부장">
+
+  <div class="pad">
+    <a class="save" href="kimyoan.vcf" download="김요안_민음사.vcf">📇 연락처 저장하기</a>
+    <p class="hint">버튼을 누르면 연락처에 바로 추가됩니다</p>
+    <div class="quick">
+      <a href="tel:010-9434-2269">전화</a>
+      <a href="sms:010-9434-2269">문자</a>
+      <a href="mailto:nice2meet6@minumsa.com">메일</a>
+    </div>
   </div>
 
-  <p class="role">마케팅부 부장</p>
-  <h1>김요안</h1>
+  <img class="face" src="card-back.png" width="591" height="1280"
+       alt="김요안 명함 뒷면 — 주소·전화·이메일과 연락처 저장용 QR">
 
-  <hr>
-
-  <a class="save" href="kimyoan.vcf" download="김요안_민음사.vcf">📇 연락처 저장하기</a>
-  <p class="hint">버튼을 누르면 연락처에 바로 추가됩니다</p>
-
-  <div class="quick">
-    <a href="tel:010-9434-2269">전화</a>
-    <a href="sms:010-9434-2269">문자</a>
-    <a href="mailto:nice2meet6@minumsa.com">메일</a>
+  <div class="dl">
+    <a href="card-front.png" download="김요안_명함_앞.png">앞면 이미지 저장</a>
+    <a href="card-back.png" download="김요안_명함_뒤.png">뒷면 이미지 저장</a>
   </div>
-
-  <hr>
-
-  <div class="rows">
-    <div class="row"><span class="lab">이동전화</span><a href="tel:010-9434-2269">010-9434-2269</a></div>
-    <div class="row"><span class="lab">대표전화</span><a href="tel:02-515-2000">02-515-2000 (내선 218)</a></div>
-    <div class="row"><span class="lab">팩스</span><span>02-515-2007</span></div>
-    <div class="row"><span class="lab">이메일</span><a href="mailto:nice2meet6@minumsa.com">nice2meet6@minumsa.com</a></div>
-    <div class="row"><span class="lab">홈페이지</span><a href="https://www.minumsa.com" target="_blank" rel="noopener">www.minumsa.com</a></div>
-    <div class="row"><span class="lab">주소</span><a href="https://map.naver.com/p/search/%EA%B0%95%EB%82%A8%EC%B6%9C%ED%8C%90%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0" target="_blank" rel="noopener">06027 서울시 강남구 도산대로1길 62<br>강남출판문화센터 6층 603호</a></div>
-  </div>
-
-  <hr>
-
-  <p class="brands">민음사 비룡소 황금가지 민음인 사이언스북스 세미콜론</p>
-
-  <footer>
-    <p>MINUMSA PUBLISHING GROUP</p>
-  </footer>
 </main>
 </body>
 </html>
